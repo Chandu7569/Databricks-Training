@@ -1,3 +1,5 @@
+## Objective
+
 This repository contains a comprehensive collection of **65 SQL queries** covering essential database concepts using `Employee`, `Department`, and `Project` tables. These queries are designed for beginners and intermediate learners to practice and improve their SQL skills.
 
 The collection includes:
