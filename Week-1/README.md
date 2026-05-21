@@ -1,4 +1,4 @@
-# SQL Practice - Basic to Window Functions
+# SQL Practice - Overall week objective
 
 This repository contains SQL queries from basic concepts to window functions using a College Management System database.
 
