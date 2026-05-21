@@ -1,73 +1,75 @@
 
--- SQL Window Functions and CTE Assignment
+-- SQL Joins Assignment Starter File
 -- Compatible with PostgreSQL
 
-DROP TABLE IF EXISTS orders;
-DROP TABLE IF EXISTS customers;
-DROP TABLE IF EXISTS employees;
+DROP TABLE IF EXISTS enrollments;
+DROP TABLE IF EXISTS courses;
+DROP TABLE IF EXISTS students;
+DROP TABLE IF EXISTS instructors;
 
-CREATE TABLE employees (
-    employee_id INT PRIMARY KEY,
-    employee_name VARCHAR(100),
-    department VARCHAR(100),
-    manager_id INT NULL,
-    salary DECIMAL(10,2),
-    hire_date DATE
+CREATE TABLE instructors (
+    instructor_id INT PRIMARY KEY,
+    instructor_name VARCHAR(100),
+    department VARCHAR(100)
 );
 
-CREATE TABLE customers (
-    customer_id INT PRIMARY KEY,
-    customer_name VARCHAR(100),
-    city VARCHAR(100)
+CREATE TABLE students (
+    student_id INT PRIMARY KEY,
+    student_name VARCHAR(100),
+    email VARCHAR(100)
 );
 
-CREATE TABLE orders (
-    order_id INT PRIMARY KEY,
-    customer_id INT,
-    employee_id INT,
-    order_date DATE,
-    total_amount DECIMAL(10,2),
-    FOREIGN KEY (customer_id) REFERENCES customers(customer_id),
-    FOREIGN KEY (employee_id) REFERENCES employees(employee_id)
+CREATE TABLE courses (
+    course_id INT PRIMARY KEY,
+    course_name VARCHAR(100),
+    instructor_id INT NULL,
+    FOREIGN KEY (instructor_id) REFERENCES instructors(instructor_id)
 );
 
--- Insert Employees
-INSERT INTO employees VALUES
-(1, 'Alice Johnson', 'Sales', NULL, 70000, '2020-01-15'),
-(2, 'Bob Smith', 'Sales', 1, 65000, '2021-03-20'),
-(3, 'Charlie Brown', 'IT', NULL, 90000, '2019-07-01'),
-(4, 'Diana Prince', 'IT', 3, 95000, '2018-11-11'),
-(5, 'Ethan Hunt', 'HR', NULL, 60000, '2022-02-10'),
-(6, 'Fiona Green', 'HR', 5, 58000, '2023-05-12'),
-(7, 'George Miller', 'Finance', NULL, 85000, '2017-09-18'),
-(8, 'Hannah Lee', 'Finance', 7, 82000, '2021-08-30');
+CREATE TABLE enrollments (
+    enrollment_id INT PRIMARY KEY,
+    student_id INT,
+    course_id INT,
+    enrollment_date DATE,
+    FOREIGN KEY (student_id) REFERENCES students(student_id),
+    FOREIGN KEY (course_id) REFERENCES courses(course_id)
+);
 
--- Insert Customers
-INSERT INTO customers VALUES
-(1, 'Acme Corp', 'New York'),
-(2, 'Tech Solutions', 'Chicago'),
-(3, 'Global Retail', 'Dallas'),
-(4, 'Blue Sky Ltd', 'Seattle'),
-(5, 'NextGen Systems', 'Boston');
+-- Insert instructors
+INSERT INTO instructors VALUES
+(1, 'Sarah Connor', 'Databases'),
+(2, 'Michael Scott', 'Programming'),
+(3, 'Tony Stark', 'Cloud Computing'),
+(4, 'Bruce Wayne', 'Cyber Security');
 
--- Insert Orders
-INSERT INTO orders VALUES
-(101, 1, 1, '2024-01-10', 500),
-(102, 2, 2, '2024-01-11', 700),
-(103, 1, 1, '2024-01-15', 1200),
-(104, 3, 3, '2024-01-18', 300),
-(105, 4, 4, '2024-01-20', 900),
-(106, 5, 2, '2024-01-25', 1500),
-(107, 2, 1, '2024-02-01', 650),
-(108, 1, 3, '2024-02-05', 1100),
-(109, 3, 4, '2024-02-10', 400),
-(110, 4, 2, '2024-02-15', 950),
-(111, 5, 1, '2024-02-20', 2000),
-(112, 1, 4, '2024-02-25', 750);
+-- Insert students
+INSERT INTO students VALUES
+(1, 'Alice Johnson', 'alice@email.com'),
+(2, 'Bob Smith', 'bob@email.com'),
+(3, 'Charlie Brown', 'charlie@email.com'),
+(4, 'Diana Prince', 'diana@email.com'),
+(5, 'Ethan Hunt', 'ethan@email.com'),
+(6, 'Fiona Green', 'fiona@email.com');
+
+-- Insert courses
+INSERT INTO courses VALUES
+(101, 'SQL Basics', 1),
+(102, 'Python Fundamentals', 2),
+(103, 'Data Analytics', NULL),
+(104, 'Cloud Computing', 3),
+(105, 'Machine Learning', NULL),
+(106, 'Cyber Security', 4);
+
+-- Insert enrollments
+INSERT INTO enrollments VALUES
+(1, 1, 101, '2024-01-10'),
+(2, 1, 102, '2024-01-12'),
+(3, 2, 101, '2024-01-15'),
+(4, 3, 104, '2024-01-20'),
+(5, 4, 106, '2024-01-25');
 
 -- Notes:
--- Multiple departments for PARTITION BY exercises.
--- Salary variations for ranking exercises.
--- Multiple customer orders for LAG/LEAD analysis.
--- Manager hierarchy included for recursive CTE practice.
-
+-- Student 5 and 6 are not enrolled in any course.
+-- Courses 103 and 105 have no instructor assigned.
+-- Courses 103 and 105 also have no enrollments.
+-- Instructor 4 teaches one course.
