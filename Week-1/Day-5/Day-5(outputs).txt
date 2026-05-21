@@ -1,0 +1,485 @@
+-- 1. List all students along with their department names.
+
++--------------+-------------------+
+| student_name | department_name   |
++--------------+-------------------+
+| Rahul        | Computer Science  |
+| Sneha        | Mechanical        |
+| Teja         | Electronics       |
++--------------+-------------------+
+
+
+-- 2. Display all staff members and their department names.
+
++------------+-------------------+
+| staff_name | department_name   |
++------------+-------------------+
+| Kumar      | Computer Science  |
+| Priya      | Mechanical        |
+| Ravi       | NULL              |
++------------+-------------------+
+
+
+-- 3. Find all departments that currently have no students assigned.
+
++-------------------+
+| department_name   |
++-------------------+
+| Civil             |
++-------------------+
+
+
+-- 4. Show students who do not have any marks recorded.
+
++--------------+
+| student_name |
++--------------+
+| Kiran        |
++--------------+
+
+
+-- 5. Display subjects that are not assigned to any staff member.
+
++--------------+
+| subject_name |
++--------------+
+| Data Mining  |
++--------------+
+
+
+-- 6. Find the average CGPA department-wise.
+
++-------------------+----------+
+| department_name   | avg_cgpa |
++-------------------+----------+
+| Computer Science  | 8.5      |
+| Mechanical        | 7.9      |
++-------------------+----------+
+
+
+-- 7. Display departments where the average CGPA is greater than 8.0.
+
++-------------------+----------+
+| department_name   | avg_cgpa |
++-------------------+----------+
+| Computer Science  | 8.5      |
++-------------------+----------+
+
+
+-- 8. Find the total number of students in each department.
+
++-------------------+----------------+
+| department_name   | total_students |
++-------------------+----------------+
+| Computer Science  | 120            |
+| Mechanical        | 90             |
++-------------------+----------------+
+
+
+-- 9. Display the highest and lowest marks scored in each subject.
+
++--------------+---------------+--------------+
+| subject_name | highest_marks | lowest_marks |
++--------------+---------------+--------------+
+| DBMS         | 98            | 45           |
+| Physics      | 95            | 50           |
++--------------+---------------+--------------+
+
+
+-- 10. Find students who scored more than 90 in any exam.
+
++--------------+
+| student_name |
++--------------+
+| Rahul        |
+| Sneha        |
++--------------+
+
+
+-- 11. Display the names of students who belong to the Computer Science department.
+
++--------------+
+| student_name |
++--------------+
+| Rahul        |
+| Teja         |
++--------------+
+
+
+-- 12. Find the number of subjects handled by each staff member.
+
++------------+----------------+
+| staff_name | total_subjects |
++------------+----------------+
+| Kumar      | 3              |
+| Priya      | 2              |
++------------+----------------+
+
+
+-- 13. Display students along with the total marks they obtained across all subjects.
+
++--------------+-------------+
+| student_name | total_marks |
++--------------+-------------+
+| Rahul        | 450         |
+| Sneha        | 430         |
++--------------+-------------+
+
+
+-- 14. Find departments with more than 2 staff members.
+
++-------------------+-------------+
+| department_name   | total_staff |
++-------------------+-------------+
+| Computer Science  | 5           |
++-------------------+-------------+
+
+
+-- 15. Display students whose CGPA is above the average CGPA.
+
++--------------+------+
+| student_name | cgpa |
++--------------+------+
+| Rahul        | 9.1  |
+| Sneha        | 8.8  |
++--------------+------+
+
+
+-- 16. Find staff members earning more than the average salary of their department.
+
++------------+--------+
+| staff_name | salary |
++------------+--------+
+| Kumar      | 85000  |
++------------+--------+
+
+
+-- 17. Display the second highest salary among staff members.
+
++------------------------+
+| second_highest_salary  |
++------------------------+
+| 92000                  |
++------------------------+
+
+
+-- 18. Find students who scored the highest marks in each subject.
+
++--------------+--------------+-------+
+| student_name | subject_name | marks |
++--------------+--------------+-------+
+| Rahul        | DBMS         | 98    |
+| Sneha        | Physics      | 95    |
++--------------+--------------+-------+
+
+
+-- 19. Display all students and their marks, including students without marks.
+
++--------------+-------+
+| student_name | marks |
++--------------+-------+
+| Rahul        | 95    |
+| Kiran        | NULL  |
++--------------+-------+
+
+
+-- 20. Find subjects where the average marks are below 70.
+
++--------------+-----------+
+| subject_name | avg_marks |
++--------------+-----------+
+| Physics      | 65        |
++--------------+-----------+
+
+
+-- 21. Display students ordered by CGPA in descending order.
+
++--------------+------+
+| student_name | cgpa |
++--------------+------+
+| Rahul        | 9.5  |
+| Teja         | 9.1  |
+| Sneha        | 8.7  |
++--------------+------+
+
+
+-- 22. Find the total salary expenditure department-wise.
+
++-------------------+--------------+
+| department_name   | total_salary |
++-------------------+--------------+
+| Computer Science  | 450000       |
++-------------------+--------------+
+
+
+-- 23. Display departments where the total salary exceeds 200000.
+
++-------------------+--------------+
+| department_name   | total_salary |
++-------------------+--------------+
+| Computer Science  | 450000       |
++-------------------+--------------+
+
+
+-- 24. Find students admitted after 2021 and having CGPA above 7.5.
+
++--------------+------+
+| student_name | cgpa |
++--------------+------+
+| Sneha        | 8.1  |
++--------------+------+
+
+
+-- 25. Display the number of students admitted each year.
+
++----------------+----------------+
+| admission_year | total_students |
++----------------+----------------+
+| 2022           | 150            |
+| 2023           | 180            |
++----------------+----------------+
+
+
+-- 26. Find the city with the maximum number of students.
+
++------------+----------------+
+| city       | total_students |
++------------+----------------+
+| Hyderabad  | 80             |
++------------+----------------+
+
+
+-- 27. Display all departments and their staff count, including empty departments.
+
++-------------------+-------------+
+| department_name   | staff_count |
++-------------------+-------------+
+| Civil             | 0           |
+| Computer Science  | 5           |
++-------------------+-------------+
+
+
+-- 28. Find students who have failed in at least one subject.
+
++--------------+
+| student_name |
++--------------+
+| Kiran        |
++--------------+
+
+
+-- 29. Display staff hired before 2018.
+
++------------+------------+
+| staff_name | hire_date  |
++------------+------------+
+| Kumar      | 2016-04-12 |
++------------+------------+
+
+
+-- 30. Find departments where no staff salary is recorded as NULL.
+
++-------------------+
+| department_name   |
++-------------------+
+| Computer Science  |
++-------------------+
+
+
+-- 31. Assign a row number to students ordered by CGPA.
+
++--------------+------| student_name | cgpa | row_num |
++--------------+------+---------+
+| Rahul       | 9.5  | 1       |
+| Teja        | 9.1  | 2       |
+| Sneha       | 8.7  | 3       |
++--------------+------+---------+
+
+
+-- 32. Rank students based on their CGPA.
+
++--------------+------+----------+
+| student_name | cgpa | rank_num |
++--------------+------+----------+
+| Rahul       | 9.5  | 1        |
+| Teja        | 9.1  | 2        |
+| Sneha       | 8.7  | 3        |
++--------------+------+----------+
+
+
+-- 33. Display dense rank of staff salaries.
+
++------------+--------+----------------+
+| staff_name | salary | dense_rank_num |
++------------+--------+----------------+
+| Kumar      | 95000  | 1              |
+| Priya      | 90000  | 2              |
+| Ravi       | 90000  | 2              |
++------------+--------+----------------+
+
+
+-- 34. Find the top 3 highest scoring students using window functions.
+
++--------------+-------------+
+| student_name | total_marks |
++--------------+-------------+
+| Rahul       | 480         |
+| Sneha       | 465         |
+| Teja        | 450         |
++--------------+-------------+
+
+
+-- 35. Display running total of marks for each student.
+
++------------+------------+-------+---------------+
+| student_id | subject_id | marks | running_total |
++------------+------------+-------+---------------+
+| 1          | 101        | 90    | 90            |
+| 1          | 102        | 85    | 175           |
++------------+------------+-------+---------------+
+
+
+-- 36. Find the average marks for each subject using window functions.
+
++------------+------------+-------+-----------+
+| subject_id | student_id | marks | avg_marks |
++------------+------------+-------+-----------+
+| 101        | 1          | 90    | 82.5      |
+| 101        | 2          | 75    | 82.5      |
++------------+------------+-------+-----------+
+
+
+-- 37. Display previous exam marks for each student using LAG().
+
++------------+------------+-------+----------------+
+| student_id | exam_date | marks | previous_marks |
++------------+------------+-------+----------------+
+| 1          | 2024-01-10 | 80    | NULL          |
+| 1          | 2024-02-10 | 90    | 80            |
++------------+------------+-------+----------------+
+
+
+-- 38. Display next exam marks for each student using LEAD().
+
++------------+------------+-------+------------+
+| student_id | exam_date | marks | next_marks |
++------------+------------+-------+------------+
+| 1          | 2024-01-10 | 80    | 90         |
+| 1          | 2024-02-10 | 90    | NULL       |
++------------+------------+-------+------------+
+
+
+-- 39. Find the highest marks within each subject using MAX() OVER().
+
++------------+------------+-------+---------------+
+| student_id | subject_id | marks | highest_marks |
++------------+------------+-------+---------------+
+| 1          | 101        | 90    | 95            |
+| 2          | 101        | 95    | 95            |
++------------+------------+-------+---------------+
+
+
+-- 40. Display cumulative average marks ordered by exam date.
+
++------------+-------+----------------+
+| exam_date | marks | cumulative_avg |
++------------+-------+----------------+
+| 2024-01-10 | 80    | 80.00          |
+| 2024-02-10 | 90    | 85.00          |
++------------+-------+----------------+
+
+
+-- 41. Find the first student admitted in each department.
+
++--------------+-------------------+----------------+----+
+| student_name | department_name   | admission_year | rn |
++--------------+-------------------+----------------+----+
+| Rahul       | Computer Science  | 2021           | 1  |
++--------------+-------------------+----------------+----+
+
+
+-- 42. Display the latest hired staff member in each department.
+
++------------+-------------------+------------+----+
+| staff_name | department_name   | hire_date  | rn |
++------------+-------------------+------------+----+
+| Priya      | Computer Science  | 2023-06-10 | 1  |
++------------+-------------------+------------+----+
+
+
+-- 43. Divide students into 4 CGPA quartiles using NTILE().
+
++--------------+------+----------+
+| student_name | cgpa | quartile |
++--------------+------+----------+
+| Rahul       | 9.5  | 1        |
+| Teja        | 9.1  | 1        |
+| Sneha       | 8.7  | 2        |
++--------------+------+----------+
+
+
+-- 44. Find percentage rank of students based on CGPA.
+
++--------------+------+--------------+
+| student_name | cgpa | percent_rank |
++--------------+------+--------------+
+| Rahul       | 9.5  | 0.00         |
+| Teja        | 9.1  | 0.50         |
++--------------+------+--------------+
+
+
+-- 45. Display cumulative distribution of salaries.
+
++------------+--------+--------------------------+
+| staff_name | salary | cumulative_distribution |
++------------+--------+--------------------------+
+| Kumar      | 95000  | 0.33                     |
+| Priya      | 90000  | 0.66                     |
++------------+--------+--------------------------+
+
+
+-- 46. Find subjects where a student's marks are above the subject average.
+
++------------+------------+-------+
+| student_id | subject_id | marks |
++------------+------------+-------+
+| 1          | 101        | 90    |
++------------+------------+-------+
+
+
+-- 47. Find departments whose average staff salary is higher than overall average salary.
+
++-------------------+------------+
+| department_name   | avg_salary |
++-------------------+------------+
+| Computer Science  | 92000      |
++-------------------+------------+
+
+
+-- 48. Display students who scored above department average marks.
+
++--------------+-------+
+| student_name | marks |
++--------------+-------+
+| Rahul       | 92    |
++--------------+-------+
+
+
+-- 49. Find the nth highest mark (3rd highest) using DENSE_RANK().
+
++-------+
+| marks |
++-------+
+| 88    |
++-------+
+
+
+-- 50. Generate a report showing student name, department, subject, exam type,
+-- marks, department average, and overall rank.
+
++--------------+-------------------+-------------+-----------+-------+----------+--------------+
+| student_name | department_name   | subject_name| exam_type | marks | dept_avg | overall_rank |
++--------------+-------------------+-------------+-----------+-------+----------+--------------+
+| Rahul       | Computer Science  | DBMS        | Mid       | 95    | 84.5     | 1            |
+| Sneha       | Mechanical        | Physics     | Final     | 88    | 78.0     | 2            |
++--------------+-------------------+-------------+-----------+-------+----------+--------------+
