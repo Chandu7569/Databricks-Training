@@ -1,0 +1,33 @@
+Query 1
+--------------------------------------------------
+student_name | course_name
+--------------------------------
+Alice        | Database Systems
+Alice        | Operating Systems
+Bob          | Computer Networks
+Charlie      | NULL
+
+Query 2
+--------------------------------------------------
+course_name
+---------------------
+Artificial Intelligence
+
+Query 3
+--------------------------------------------------
+instructor_name | course_name
+----------------------------------------
+Dr. Smith       | Database Systems
+Dr. Brown       | Operating Systems
+Dr. Wilson      | NULL
+
+...
+
+Query 10
+--------------------------------------------------
+student_name | course_name | instructor_name
+----------------------------------------------------------
+Alice        | Database Systems     | Dr. Smith
+Alice        | Operating Systems    | Dr. Brown
+Bob          | Computer Networks    | Dr. Wilson
+Charlie      | NULL                 | NULL
