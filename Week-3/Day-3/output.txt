@@ -1,33 +1,102 @@
-Query 1
---------------------------------------------------
-student_name | course_name
---------------------------------
-Alice        | Database Systems
-Alice        | Operating Systems
-Bob          | Computer Networks
-Charlie      | NULL
+OUTPUT 1
+--------
+student_name     | course_name
+-----------------|----------------------
+Alice Johnson    | SQL Basics
+Alice Johnson    | Python Fundamentals
+Bob Smith        | SQL Basics
+Charlie Brown    | Cloud Computing
+Diana Prince     | Cyber Security
+Ethan Hunt       | NULL
+Fiona Green      | NULL
 
-Query 2
---------------------------------------------------
+
+OUTPUT 2
+--------
 course_name
----------------------
-Artificial Intelligence
+------------------
+Data Analytics
+Machine Learning
 
-Query 3
---------------------------------------------------
-instructor_name | course_name
-----------------------------------------
-Dr. Smith       | Database Systems
-Dr. Brown       | Operating Systems
-Dr. Wilson      | NULL
 
-...
+OUTPUT 3
+--------
+instructor_name  | course_name
+-----------------|----------------------
+Sarah Connor     | SQL Basics
+Michael Scott    | Python Fundamentals
+Tony Stark       | Cloud Computing
+Bruce Wayne      | Cyber Security
 
-Query 10
---------------------------------------------------
-student_name | course_name | instructor_name
-----------------------------------------------------------
-Alice        | Database Systems     | Dr. Smith
-Alice        | Operating Systems    | Dr. Brown
-Bob          | Computer Networks    | Dr. Wilson
-Charlie      | NULL                 | NULL
+
+OUTPUT 4
+--------
+course_name
+------------------
+Data Analytics
+Machine Learning
+
+
+OUTPUT 5
+--------
+student_name     | course_id | enrollment_date
+-----------------|-----------|----------------
+Alice Johnson    | 101       | 2024-01-10
+Alice Johnson    | 102       | 2024-01-12
+Bob Smith        | 101       | 2024-01-15
+Charlie Brown    | 104       | 2024-01-20
+Diana Prince     | 106       | 2024-01-25
+
+
+OUTPUT 6
+--------
+student_name
+-----------------
+Ethan Hunt
+Fiona Green
+
+
+OUTPUT 7
+--------
+student_name     | course_id | enrollment_date
+-----------------|-----------|----------------
+Alice Johnson    | 101       | 2024-01-10
+Alice Johnson    | 102       | 2024-01-12
+Bob Smith        | 101       | 2024-01-15
+Charlie Brown    | 104       | 2024-01-20
+Diana Prince     | 106       | 2024-01-25
+Ethan Hunt       | NULL      | NULL
+Fiona Green      | NULL      | NULL
+
+
+OUTPUT 8
+--------
+course_name
+------------------
+Data Analytics
+Machine Learning
+
+
+OUTPUT 9
+--------
+instructor_name  | course_name
+-----------------|----------------------
+Sarah Connor     | SQL Basics
+Michael Scott    | Python Fundamentals
+Tony Stark       | Cloud Computing
+Bruce Wayne      | Cyber Security
+NULL             | Data Analytics
+NULL             | Machine Learning
+
+
+OUTPUT 10
+---------
+student_name     | course_name          | instructor_name
+-----------------|----------------------|-----------------
+Alice Johnson    | SQL Basics           | Sarah Connor
+Alice Johnson    | Python Fundamentals  | Michael Scott
+Bob Smith        | SQL Basics           | Sarah Connor
+Charlie Brown    | Cloud Computing      | Tony Stark
+Diana Prince     | Cyber Security       | Bruce Wayne
+Ethan Hunt       | NULL                 | NULL
+Fiona Green      | NULL                 | NULL
